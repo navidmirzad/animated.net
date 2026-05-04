@@ -1,9 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace animated.DTOs;
 
 public record CreateAnimeDTO(
-    string name,
-    List<String> genre,
-    int episodes,
-    string studio,
-    DateOnly releaseDate
+    [Required] string name,
+    [Required] List<string> genre,
+    [Required] int episodes,
+    [Required] string studio,
+    [Required] DateOnly releaseDate
 );

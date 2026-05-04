@@ -35,12 +35,6 @@ public static class AnimeEndpoints
       // POST /animes
       group.MapPost("/", (CreateAnimeDTO newAnime) =>
       {
-
-        if (string.IsNullOrEmpty(newAnime.name))
-          {
-              return Results.BadRequest("Anime name is required.");
-          }
-
           AnimeDTO anime = new(
               animes.Count + 1,
               newAnime.name,
