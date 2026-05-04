@@ -1,0 +1,29 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+.DS_Store
+
+# Node (for when React frontend is added)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Misc
+.env
+.env.*.local
+*.log
+Thumbs.db
