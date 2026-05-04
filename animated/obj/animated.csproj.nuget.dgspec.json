@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj": {}
+    "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj": {}
   },
   "projects": {
-    "c:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj": {
+    "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj",
+        "projectUniqueName": "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj",
         "projectName": "animated",
-        "projectPath": "c:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj",
+        "projectPath": "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj",
         "packagesPath": "C:\\Users\\45536\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\obj\\",
+        "outputPath": "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\45536\\AppData\\Roaming\\NuGet\\NuGet.Config"
