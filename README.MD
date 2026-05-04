@@ -36,4 +36,4 @@ One of our long-term objectives is to evolve this project into a **microservice 
 - Improved system resilience  
 - High availability (uptime)  
 - Fault tolerance  
-- Better separation of concerns  
+- Better separation of concerns
