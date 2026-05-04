@@ -1,0 +1,41 @@
+GET http://127.0.0.1:5110
+
+###
+
+GET http://127.0.0.1:5110/api/v1/animes
+
+### 
+
+GET http://127.0.0.1:5110/api/v1/animes/3
+
+###
+
+POST http://127.0.0.1:5110/api/v1/animes
+Content-Type: application/json
+
+{
+  "name": "Navids Room",
+  "genre": ["Mystery", "Action", "Slice of life"],
+  "episodes": 25,
+  "studio": "Friday Productions",
+  "releaseDate": "2026-05-03"
+}
+
+###
+
+PUT http://127.0.0.1:5110/api/v1/animes/3
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Navids Room",
+  "genre": ["Mystery", "Action", "Slice of life"],
+  "episodes": 25,
+  "studio": "Friday Productions",
+  "releaseDate": "2026-05-03",
+  "rating": 8.95
+}
+
+###
+
+DELETE http://127.0.0.1:5110/api/v1/animes/3
