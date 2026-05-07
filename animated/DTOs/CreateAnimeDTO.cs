@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 namespace animated.DTOs;
 
 public record CreateAnimeDTO(
-    [Required] string name,
-    [Required] List<string> genre,
-    [Required] int episodes,
-    [Required] string studio,
-    [Required] DateOnly releaseDate
+    [Required] string Name,
+    [Required] List<string> Genre,
+    [Required] int? Episodes,
+    [Required] string? Studio,
+    [Required] DateOnly? ReleaseDate
 );

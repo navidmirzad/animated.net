@@ -7,7 +7,7 @@ public static class AnimeEndpoints
 {
 
     const string GetAnimeEndpointName = "GetAnime";
-
+ 
     private static readonly List<AnimeDTO> animes = [
       new (1, "One Piece", ["Action", "Adventure", "Comedy"], 1159, "Toei Animation", new DateOnly(1999, 10, 20), 0),
       new (2, "My Hero Academia Season 1", ["Action", "Superhero"], 25, "Bones", new DateOnly(2016, 4, 3), 0),
@@ -26,7 +26,7 @@ public static class AnimeEndpoints
       // GET /animes/1
       group.MapGet("/{id}", (int id) =>
       {
-          var games = animes.Find(anime => anime.id == id);
+          var games = animes.Find(anime => anime.Id == id);
 
           return games is null ? Results.NotFound() : Results.Ok(games);
       })
@@ -37,23 +37,23 @@ public static class AnimeEndpoints
       {
           AnimeDTO anime = new(
               animes.Count + 1,
-              newAnime.name,
-              newAnime.genre,
-              newAnime.episodes,
-              newAnime.studio,
-              newAnime.releaseDate,
+              newAnime.Name,
+              newAnime.Genre,
+              newAnime.Episodes,
+              newAnime.Studio,
+              newAnime.ReleaseDate,
               0
           );
 
           animes.Add(anime);
           
-          return Results.CreatedAtRoute(GetAnimeEndpointName, new {id = anime.id}, anime);
+          return Results.CreatedAtRoute(GetAnimeEndpointName, new {id = anime.Id}, anime);
       });
 
       // PUT /animes/1
       group.MapPut("/{id}", (int id, UpdateAnimeDTO updatedAnime) =>
       {
-          var index = animes.FindIndex(anime => anime.id == id);
+          var index = animes.FindIndex(anime => anime.Id == id);
 
           if (index == -1)
           {
@@ -62,12 +62,12 @@ public static class AnimeEndpoints
 
           animes[index] = new AnimeDTO(
               id, 
-              updatedAnime.name,
-              updatedAnime.genre,
-              updatedAnime.episodes,
-              updatedAnime.studio,
-              updatedAnime.releaseDate,
-              updatedAnime.rating
+              updatedAnime.Name,
+              updatedAnime.Genre,
+              updatedAnime.Episodes,
+              updatedAnime.Studio,
+              updatedAnime.ReleaseDate,
+              updatedAnime.Rating
           );
 
           return Results.NoContent();
@@ -76,7 +76,7 @@ public static class AnimeEndpoints
       // DELETE /games/1
       group.MapDelete("/{id}", (int id) =>
       {
-        animes.RemoveAll(anime => anime.id == id);
+        animes.RemoveAll(anime => anime.Id == id);
 
           return Results.NoContent();
       });  

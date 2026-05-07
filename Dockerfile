@@ -4,6 +4,7 @@ WORKDIR /app
 
 # Copy project files
 COPY ["animated/animated.csproj", "animated/"]
+RUN dotnet add "animated/animated.csproj" package DotNetEnv
 RUN dotnet restore "animated/animated.csproj"
 
 # Copy source code
@@ -13,7 +14,7 @@ COPY . .
 RUN dotnet publish "animated/animated.csproj" -c Release -o /app/publish
 
 # Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:9.0.2 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 

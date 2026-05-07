@@ -10,6 +10,7 @@
 # env
 .env
 APIs.txt
+appsettings.Development.json
 
 # User-specific files
 *.rsuser
