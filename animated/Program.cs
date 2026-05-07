@@ -15,4 +15,6 @@ var app = builder.Build();
 
 app.MapAnimeEndpoints();
 
+app.migrateDB();
+
 app.Run();
