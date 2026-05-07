@@ -7,6 +7,7 @@ COPY ["animated/animated.csproj", "animated/"]
 RUN dotnet add "animated/animated.csproj" package DotNetEnv
 RUN dotnet restore "animated/animated.csproj"
 
+
 # Copy source code
 COPY . .
 
