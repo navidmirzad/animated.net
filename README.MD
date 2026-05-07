@@ -22,7 +22,7 @@ the goal is to build a clean, responsive, and efficient anime database experienc
 
 For now, Animated.NET is built as a **monolithic application**, consisting of:
 
-- **Backend:** C# / .NET  
+- **Backend:** C# / .NET 9.0.2
 - **Frontend:** React.js  
 - **Database:** MariaDB
 
