@@ -1,10 +1,12 @@
 import './App.css'
+import Carousel from './components/Carousel'
 
 function App() {
-
   return (
     <>
-     <h1>hello world</h1>
+      <div>
+        <Carousel api="https://api.jikan.moe/v4/seasons/now" />
+      </div>
     </>
   )
 }
