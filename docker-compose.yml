@@ -1,21 +1,40 @@
 services:
+  frontend:
+    build:
+      context: ./frontend/animated-frontend
+      dockerfile: Dockerfile
+    container_name: animated-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - VITE_API_URL=http://backend:5000
+    volumes:
+      - ./frontend/animated-frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - animated-network
+    restart: unless-stopped
+
   backend:
     build:
-      context: .
+      context: ./animated
       dockerfile: Dockerfile
     container_name: animated-backend
     ports:
       - "5000:5000"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - DB_SERVER=${DB_SERVER}
-      - DB_HOST=${DB_HOST}
-      - DB_PORT=${DB_PORT}
+      - DB_SERVER=mariadb
+      - DB_PORT=3306
       - DB_NAME=${DB_NAME}
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
     depends_on:
-      - mariadb
+      mariadb:
+        condition: service_healthy
     networks:
       - animated-network
     restart: unless-stopped

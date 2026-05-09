@@ -9069,11 +9069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Documents\\MyProjects\\animated\\animated.net\\animated\\animated.csproj",
+      "projectUniqueName": "C:\\Users\\45536\\Csharp.net.projects\\animated.net\\animated\\animated.csproj",
       "projectName": "animated",
-      "projectPath": "C:\\Users\\andre\\Documents\\MyProjects\\animated\\animated.net\\animated\\animated.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Documents\\MyProjects\\animated\\animated.net\\animated\\obj\\",
+      "projectPath": "C:\\Users\\45536\\Csharp.net.projects\\animated.net\\animated\\animated.csproj",
+      "packagesPath": "C:\\Users\\45536\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\45536\\Csharp.net.projects\\animated.net\\animated\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config"

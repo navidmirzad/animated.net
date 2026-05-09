@@ -1,18 +1,18 @@
 # Build stage
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 # Copy project files
-COPY ["animated/animated.csproj", "animated/"]
-RUN dotnet add "animated/animated.csproj" package DotNetEnv
-RUN dotnet restore "animated/animated.csproj"
+COPY ["animated.csproj", "./"]
+
+RUN dotnet restore "animated.csproj"
 
 
 # Copy source code
 COPY . .
 
 # Build and publish the application
-RUN dotnet publish "animated/animated.csproj" -c Release -o /app/publish
+RUN dotnet publish "animated.csproj" -c Release -o /app/publish
 
 # Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:9.0.2 AS runtime
