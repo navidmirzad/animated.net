@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj": {}
+    "C:\\Users\\andre\\Documents\\MyProjects\\animated\\animated.net\\animated\\animated.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj": {
+    "C:\\Users\\andre\\Documents\\MyProjects\\animated\\animated.net\\animated\\animated.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Documents\\MyProjects\\animated\\animated.net\\animated\\animated.csproj",
         "projectName": "animated",
-        "projectPath": "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\animated.csproj",
-        "packagesPath": "C:\\Users\\45536\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45536\\C# .NET Projects\\animated.net\\animated\\obj\\",
+        "projectPath": "C:\\Users\\andre\\Documents\\MyProjects\\animated\\animated.net\\animated\\animated.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre\\Documents\\MyProjects\\animated\\animated.net\\animated\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\45536\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -48,7 +48,21 @@
               "target": "Package",
               "version": "[3.2.0, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
@@ -78,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
