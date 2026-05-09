@@ -9,8 +9,8 @@ public static class AnimeEndpoints
     const string GetAnimeEndpointName = "GetAnime";
  
     private static readonly List<AnimeDTO> animes = [
-      new (1, "One Piece", ["Action", "Adventure", "Comedy"], 1159, "Toei Animation", new DateOnly(1999, 10, 20), 0),
-      new (2, "My Hero Academia Season 1", ["Action", "Superhero"], 25, "Bones", new DateOnly(2016, 4, 3), 0),
+      new (1, "One Piece", [], 1159, "Toei Animation", new DateOnly(1999, 10, 20), 0),
+      new (2, "My Hero Academia Season 1", [], 25, "Bones", new DateOnly(2016, 4, 3), 0),
     ];
 
     public static void MapAnimeEndpoints(this WebApplication app)
