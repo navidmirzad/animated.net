@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using animated.Models;
 
 namespace animated.DTOs.DTOs;
 
@@ -8,9 +9,9 @@ namespace animated.DTOs.DTOs;
 public record AnimeDTO(
     [Required] int Id,
     [Required] string Name,
-    [Required] List<string> Genre,
+    [Required] List<Genre> Genres,
     [Required] int? Episodes,
     [Required] string? Studio,
     [Required] DateOnly? ReleaseDate,
-    [Required][Range(0, 10)] float Rating
+    [Required][Range(0, 10)] float? Rating
 );
